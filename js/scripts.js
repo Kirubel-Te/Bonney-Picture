@@ -48,4 +48,17 @@ $(document).ready(function () {
             },800);
         }
     })
+    $(".menu-mobile").click((e) => {
+        e.stopPropagation();
+        if($(".mobile-content").css("display") === "none"){
+            $(".mobile-content").css("cssText","display:block !important").fadeIn(900);
+        }
+    })
+    $(document).click((e) => {
+        if(!$(e.target).closest("no-click-zone").length){
+            if($(".mobile-content").css("display") === "block"){
+                $(".mobile-content").css("cssText","display:none !important").fadeOut(300);
+            }
+        }
+    })
 });
