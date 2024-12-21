@@ -48,16 +48,40 @@ $(document).ready(function () {
             },800);
         }
     })
+    $('.mobile-content span').on('click', function (e) {
+        e.preventDefault();
+
+        const target = $($(this).attr('href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
     $(".menu-mobile").click((e) => {
         e.stopPropagation();
         if($(".mobile-content").css("display") === "none"){
-            $(".mobile-content").css("cssText","display:block !important").fadeIn(900);
+            $(".mobile-content").css("cssText","display:block !important");
+            $(".mobile-content").css({
+                height:"0",
+                opacity:"0"
+            })
+            $(".mobile-content").animate({
+                height: "100%",
+                opacity:0.9
+
+            },500);
         }
     })
     $(document).click((e) => {
         if(!$(e.target).closest("no-click-zone").length){
             if($(".mobile-content").css("display") === "block"){
-                $(".mobile-content").css("cssText","display:none !important").fadeOut(300);
+                $(".mobile-content").animate({
+                    height:"0",
+                    opacity:0
+                },500, function() {
+                    $(this).css("cssText","display:none");
+                })
             }
         }
     })
