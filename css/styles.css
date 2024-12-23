@@ -227,7 +227,9 @@ hr{
     color:white;
 }
 .contact-title{
-    color: orangered;
+    background: linear-gradient(to right,orangered,#12122e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
     padding-top: 120px;
     text-align: center;
 }
@@ -235,6 +237,47 @@ hr{
     font-size: 45px;
     font-weight: 550;
 }
+.infowrapper{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 40px;
+}
+.contact-info{
+    background-color: #000;
+
+}
+.address,.phone,.gmail,.website{
+    background-color: #12122e;
+    border: 4px solid #000;
+    border-radius: 35px;
+    opacity:0.9;
+    overflow: hidden;
+}
+.address div,.phone div, .gmail div, .website div{
+    padding-top: 10px;
+}
+.address:hover,.phone:hover, .gmail:hover, .website:hover{
+    background-color: #000;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px #7cc4f8;
+    cursor:pointer;
+}
+.social-media{
+    background-color: #12122e;
+    box-shadow: 0 4px 10px #7cc4f8;
+    border-radius: 10px;
+    height: 410px;
+}
+.AboutMe,.E-img-desc h3,.P-img-desc h3,.phone-name,.email-name,.web-name,.map-name,.social-title h2{
+    background: linear-gradient(to right,orangered,#12122e);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
 
 
 
@@ -252,6 +295,10 @@ hr{
         font-size: 15px;
         font-weight: 300;
     }
+    .social-media{
+        width:75%;
+        height: 455px;
+    }
 
 }
 @media(max-width:576px){
@@ -259,7 +306,7 @@ hr{
         font-size: 12px;
     }
     .description{
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 470;
     }
     .Welcome h1{
@@ -268,5 +315,17 @@ hr{
     .logo h2{
         font-size: 27px;
         font-weight: 250;
+    }
+    .contact-info p{
+        font-size: 12px;
+    }
+}
+@media(max-width:920px){
+    .menu ul li a{
+        font-size: 19px;
+        font-weight: 360;
+    }
+    .social-media{
+        height:480px;
     }
 }
