@@ -278,8 +278,89 @@ hr{
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
-
-
+.curtain-img img,.plant-img img,.wall-img img,.cafe-img img,.paint-img img,.software-img img{
+    width:100%;
+}
+.Portfolio{
+    background-color: #000;
+    color:white;
+    max-width: 100%;
+}
+.portfolio-title{
+    background:linear-gradient(orangered,#000);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 30px;
+}
+.portfolio-title h3{
+    font-size: 45px;
+    font-weight: 550;
+    padding-top: 55px;
+}
+.project-wrapper{
+    padding-top: 30px;
+}
+.curtain,.wall,.paint,.software,.cafe,.plant{
+    background-color: #12122e;
+    border-radius: 30px;
+    overflow: hidden;
+    color:orangered;
+}
+.project-wrapper button{
+    width:30%;
+    color:white;
+    border-radius: 15px;
+    background-color: #12122e;
+    box-shadow: 0 4px 10px #7cc4f8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.curtain:hover,.wall:hover,.paint:hover,.software:hover,.cafe:hover,.plant:hover{
+    background-color: #000;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px #7cc4f8;
+    cursor:pointer;
+}
+.curtain div,.paint div,.cafe div,.wall div,.software div,.plant div{
+    padding-top: 10px;
+}
+.curtain span,.paint span,.cafe span,.wall span,.software span,.plant span{
+    margin-right: 5px;
+    border: #000 solid 1px;
+    box-shadow:0 4px 9px #7cc4f8;
+    color:white;
+    border-radius: 12px;
+    font-size: small;
+}
+.more-project button{
+    width: 250px;
+    background-color: #12122e;
+    color: white; 
+    padding: 10px 20px;  
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    font-size: 35px;
+}
+.more-project{
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-bottom: 140px;
+}
+.more-project button:hover{
+    background-color: #000;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px #7cc4f8;
+    cursor:pointer;
+}
 
 
 
