@@ -251,6 +251,7 @@ hr{
 .address,.phone,.gmail,.website{
     background-color: #12122e;
     border: 4px solid #000;
+    box-shadow: 0 4px 9px #7cc4f8;
     border-radius: 35px;
     opacity:0.9;
     overflow: hidden;
